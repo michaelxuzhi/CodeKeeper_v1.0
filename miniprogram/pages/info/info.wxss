@@ -1,0 +1,27 @@
+page{
+  background: #fff;
+}
+
+.cu-time1{
+  width: 120rpx;
+  text-align: center;
+  padding: 0;
+  font-size: 26rpx;
+  color: #7D26CD;
+  display: block;
+}
+
+.margin-my{
+  margin-top: 30rpx;
+  margin-bottom:  30rpx;
+}
+.img1{
+  width: 320rpx;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.bg-gradual-blue-my {
+  background-image: linear-gradient(45deg, #a1c4fd, #c2e9fb);
+  color: rgb(255, 255, 255);
+}

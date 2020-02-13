@@ -1,0 +1,39 @@
+<form>
+  <view class="cu-form-group margin-top">
+    <view class="title">账号</view>
+    <input class="holder" placeholder="account" bindinput="account"></input>
+    <text class="icon-people text-grey"></text>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">用户名</view>
+    <input class="holder" placeholder="nickName" bindinput="nickName"></input>
+    <text class="icon-emoji text-pink"></text>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">密码</view>
+    <input class="holder" placeholder="passWord" bindinput="password"></input>
+    <text class="icon-lock text-black"></text>
+  </view>
+
+  <view class="cu-form-group top-my">
+    <view class="title" style="margin-top:20rpx">备注</view>
+    <textarea placeholder="{{textareaAValue}}" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class="placeholder" class="{{textareaAValue?'value':' '}}" style="font-style: italic" bindinput="textareaAInput"></textarea>
+  </view>
+
+  <view class="cu-form-group">
+    <view class="title">日期选择</view>
+    <picker mode="date" value="{{date}}" start="1950-01-01" end="2099-12-31" bindchange="DateChange">
+      <view class="picker" style="font-size:35rpx;font-weight:bolder;font-style:italic;color:#292929;">
+        {{date}}
+      </view>
+    </picker>
+  </view>
+</form>
+
+<view class="body1">
+  <button class="btn1 cu-btn lines-blue lg shadow" bindtap="submit">提交</button>
+  <!-- <button class="btn1 cu-btn line-red shadow" bindtap="reset">重置</button>
+  <button class="btn1 cu-btn line-yellow shadow" bindtap="http">HTTP</button> -->
+  <button class="btn1 cu-btn lines-purple lg shadow" bindtap="read">查看</button>
+
+</view>

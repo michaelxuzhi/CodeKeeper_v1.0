@@ -1,0 +1,24 @@
+.cu-form-group .title {
+  min-width: calc(4em + 30rpx);
+  font-weight: bolder;
+}
+.holder{
+  font-style: italic;
+}
+
+
+.body1{
+  width: 100%;
+  height: 400rpx;
+  /* background-color: red; */
+  text-align: center;
+}
+.btn1{
+  display: flex;
+  margin: 60rpx 0;
+  flex: 1;
+}
+.top-my{
+  align-items: flex-start;
+  
+}

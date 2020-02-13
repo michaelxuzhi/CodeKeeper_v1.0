@@ -1,0 +1,36 @@
+<view class="cu-custom" style="height:128rpx;">
+  <view class="cu-bar fixed bg-gradual-blue-my" style="height:128rpx;padding-top:40rpx;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <!--这是时间轴之前的返回按钮图标  -->
+      详情
+    </navigator>
+  </view>
+</view>
+
+<view class="cu-timeline" wx:for="{{mydata}}" wx:key="mydata">
+  
+  <view class="cu-item" style="color:{{colormy}}">
+    <view class="content" data-id='{{item._id}}' bindtouchstart='touchstart' bindtouchend='touchend' bindlongpress='longpress'>
+      <view class="cu-capsule radius">
+        <view class="margin-my">日期：{{item.date}}</view>
+      </view>
+
+      <view class="margin-my">昵称：{{item.nickName}}</view>
+      <view class="margin-my">账号：{{item.account}}</view>
+      <view class="margin-my">密码：{{item.passWord}}</view>
+      <view class="margin-my">备注：{{item.textareaAValue}}</view>
+      
+      
+    </view>
+  </view> 
+  <!-- <view class="cu-timeline">
+  <view class="cu-time">{{item.date}}</view>
+  <view class="cu-item">
+    <view class="content">
+      <text>{{item.account}}</text> <text>【{{item.nickName}}】</text> <text>{{item.textareaAValue}}</text><text>{{item.passWord}}</text>
+    </view>
+  </view>
+</view> -->
+
+</view>
